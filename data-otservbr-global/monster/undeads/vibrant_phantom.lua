@@ -94,7 +94,7 @@ monster.loot = {
 	{id = 23529, chance = 28920}, -- ring of blue plasma
 	{id = 34143, chance = 3500}, -- vibrant heart
 	{id = 34144, chance = 4500}, -- vibrant robe
-	{id = 34109, chance = 50} -- bag you desire
+	{id = 34109, chance = 10} -- bag you desire
 }
 
 monster.attacks = {

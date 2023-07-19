@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="iso-8859-1"?>
 <items>
 	<!--  Liquids -->
 	<!--  Fluid type 0 is same as water (id="1") -->
@@ -57369,5 +57369,429 @@
 	<item id="43517" article="a" name="shield of destiny replica">
 		<attribute key="description" value="Souvenir from Thais Museum."/>
 		<attribute key="weight" value="6800"/>
+	</item>
+	<item id="43864" name="sanguine blade">
+		<attribute key="weaponType" value="sword"/>
+		<attribute key="elementdeath" value="45"/>
+		<attribute key="manaleechamount" value="300"/>
+		<attribute key="manaleechchance" value="100"/>
+		<attribute key="lifeleechamount" value="500"/>
+		<attribute key="lifeleechchance" value="100"/>
+		<attribute key="skillsword" value="5"/>
+		<attribute key="attack" value="7"/>
+		<attribute key="extradef" value="3"/>
+		<attribute key="defense" value="32"/>
+		<attribute key="weight" value="6300"/>
+		<attribute key="imbuementslot" value="3">
+			<attribute key="elemental damage" value="3"/>
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost sword" value="3"/>
+		</attribute>
+	</item>
+	<item id="43865" name="grand sanguine blade">
+		<attribute key="weaponType" value="sword"/>
+		<attribute key="elementice" value="60"/>
+		<attribute key="manaleechamount" value="300"/>
+		<attribute key="manaleechchance" value="100"/>
+		<attribute key="lifeleechamount" value="500"/>
+		<attribute key="lifeleechchance" value="100"/>
+		<attribute key="skillsword" value="7"/>
+		<attribute key="attack" value="40"/>
+		<attribute key="extradef" value="3"/>
+		<attribute key="defense" value="32"/>
+		<attribute key="weight" value="6300"/>
+		<attribute key="imbuementslot" value="3">
+			<attribute key="elemental damage" value="3"/>
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost sword" value="3"/>
+		</attribute>
+	</item>
+	<item id="43866" name="sanguine cudgel">
+		<attribute key="weaponType" value="club"/>
+		<attribute key="elementdeath" value="45"/>
+		<attribute key="manaleechamount" value="300"/>
+		<attribute key="manaleechchance" value="100"/>
+		<attribute key="lifeleechamount" value="500"/>
+		<attribute key="lifeleechchance" value="100"/>
+		<attribute key="skillclub" value="5"/>
+		<attribute key="attack" value="7"/>
+		<attribute key="extradef" value="3"/>
+		<attribute key="defense" value="32"/>
+		<attribute key="weight" value="6300"/>
+		<attribute key="imbuementslot" value="3">
+			<attribute key="elemental damage" value="3"/>
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost club" value="3"/>
+		</attribute>
+	</item>
+	<item id="43867" name="grand sanguine cudgel">
+		<attribute key="weaponType" value="club"/>
+		<attribute key="elementice" value="60"/>
+		<attribute key="manaleechamount" value="300"/>
+		<attribute key="manaleechchance" value="100"/>
+		<attribute key="lifeleechamount" value="500"/>
+		<attribute key="lifeleechchance" value="100"/>
+		<attribute key="skillclub" value="7"/>
+		<attribute key="attack" value="40"/>
+		<attribute key="extradef" value="3"/>
+		<attribute key="defense" value="32"/>
+		<attribute key="weight" value="6300"/>
+		<attribute key="imbuementslot" value="3">
+			<attribute key="elemental damage" value="3"/>
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost club" value="3"/>
+		</attribute>
+	</item>
+	<item id="43868" name="sanguine hatchet">
+		<attribute key="weaponType" value="axe"/>
+		<attribute key="elementice" value="60"/>
+		<attribute key="manaleechamount" value="300"/>
+		<attribute key="manaleechchance" value="100"/>
+		<attribute key="lifeleechamount" value="500"/>
+		<attribute key="lifeleechchance" value="100"/>
+		<attribute key="skillaxe" value="7"/>
+		<attribute key="attack" value="40"/>
+		<attribute key="extradef" value="3"/>
+		<attribute key="defense" value="32"/>
+		<attribute key="weight" value="6300"/>
+		<attribute key="imbuementslot" value="3">
+			<attribute key="elemental damage" value="3"/>
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost axe" value="3"/>
+		</attribute>
+	</item>
+	<item id="43869" name="grand sanguine hatchet">
+		<attribute key="weaponType" value="axe"/>
+		<attribute key="elementice" value="60"/>
+		<attribute key="manaleechamount" value="300"/>
+		<attribute key="manaleechchance" value="100"/>
+		<attribute key="lifeleechamount" value="500"/>
+		<attribute key="lifeleechchance" value="100"/>
+		<attribute key="skillaxe" value="7"/>
+		<attribute key="attack" value="40"/>
+		<attribute key="extradef" value="3"/>
+		<attribute key="defense" value="32"/>
+		<attribute key="weight" value="6300"/>
+		<attribute key="imbuementslot" value="3">
+			<attribute key="elemental damage" value="3"/>
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost axe" value="3"/>
+		</attribute>
+	</item>
+	<item id="43870" name="sanguine razor">
+		<attribute key="weaponType" value="sword"/>
+		<attribute key="slotType" value="two-handed"/>
+		<attribute key="elementice" value="47"/>
+		<attribute key="criticalhitdamage" value="50"/>
+		<attribute key="criticalhitchance" value="20"/>
+		<attribute key="skillsword" value="5"/>
+		<attribute key="attack" value="10"/>
+		<attribute key="defense" value="35"/>
+		<attribute key="weight" value="8100"/>
+		<attribute key="imbuementslot" value="3">
+			<attribute key="elemental damage" value="3"/>
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost sword" value="3"/>
+		</attribute>
+	</item>
+	<item id="43871" name="grand sanguine razor">
+		<attribute key="weaponType" value="sword"/>
+		<attribute key="slotType" value="two-handed"/>
+		<attribute key="elementice" value="60"/>
+		<attribute key="criticalhitdamage" value="50"/>
+		<attribute key="criticalhitchance" value="20"/>
+		<attribute key="skillsword" value="7"/>
+		<attribute key="attack" value="40"/>
+		<attribute key="defense" value="35"/>
+		<attribute key="weight" value="8100"/>
+		<attribute key="imbuementslot" value="3">
+			<attribute key="elemental damage" value="3"/>
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost sword" value="3"/>
+		</attribute>
+	</item>
+	<item id="43872" name="sanguine bludgeon">
+		<attribute key="weaponType" value="club"/>
+		<attribute key="slotType" value="two-handed"/>
+		<attribute key="elementice" value="47"/>
+		<attribute key="criticalhitdamage" value="10"/>
+		<attribute key="criticalhitchance" value="10"/>
+		<attribute key="skillclub" value="5"/>
+		<attribute key="attack" value="10"/>
+		<attribute key="defense" value="35"/>
+		<attribute key="weight" value="8100"/>
+		<attribute key="imbuementslot" value="3">
+			<attribute key="elemental damage" value="3"/>
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost club" value="3"/>
+		</attribute>
+	</item>
+	<item id="43873" name="grand sanguine bludgeon">
+		<attribute key="weaponType" value="club"/>
+		<attribute key="slotType" value="two-handed"/>
+		<attribute key="elementice" value="60"/>
+		<attribute key="criticalhitdamage" value="50"/>
+		<attribute key="criticalhitchance" value="20"/>
+		<attribute key="skillclub" value="7"/>
+		<attribute key="attack" value="40"/>
+		<attribute key="defense" value="35"/>
+		<attribute key="weight" value="8100"/>
+		<attribute key="imbuementslot" value="3">
+			<attribute key="elemental damage" value="3"/>
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost club" value="3"/>
+		</attribute>
+	</item>
+	<item id="43874" name="grand sanguine battleaxe">
+		<attribute key="weaponType" value="axe"/>
+		<attribute key="slotType" value="two-handed"/>
+		<attribute key="elementice" value="60"/>
+		<attribute key="criticalhitdamage" value="50"/>
+		<attribute key="criticalhitchance" value="20"/>
+		<attribute key="skillaxe" value="10"/>
+		<attribute key="attack" value="40"/>
+		<attribute key="defense" value="35"/>
+		<attribute key="weight" value="8100"/>
+		<attribute key="imbuementslot" value="3">
+			<attribute key="elemental damage" value="3"/>
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost axe" value="3"/>
+		</attribute>
+	</item>
+	<item id="43875" name="sanguine battleaxe">
+		<attribute key="weaponType" value="axe"/>
+		<attribute key="slotType" value="two-handed"/>
+		<attribute key="elementice" value="47"/>
+		<attribute key="criticalhitdamage" value="10"/>
+		<attribute key="criticalhitchance" value="10"/>
+		<attribute key="skillaxe" value="10"/>
+		<attribute key="attack" value="10"/>
+		<attribute key="defense" value="35"/>
+		<attribute key="weight" value="8100"/>
+		<attribute key="imbuementslot" value="3">
+			<attribute key="elemental damage" value="3"/>
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost axe" value="3"/>
+		</attribute>
+	</item>
+	<item id="43876" name="sanguine bow">
+		<attribute key="weaponType" value="distance"/>
+		<attribute key="slotType" value="two-handed"/>
+		<attribute key="ammotype" value="arrow"/>
+		<attribute key="absorbpercentholy" value="7"/>
+		<attribute key="criticalhitdamage" value="10"/>
+		<attribute key="criticalhitchance" value="10"/>
+		<attribute key="skilldist" value="10"/>
+		<attribute key="hitchance" value="35"/>
+		<attribute key="range" value="6"/>
+		<attribute key="attack" value="20"/>
+		<attribute key="weight" value="4700"/>
+		<attribute key="imbuementslot" value="3">
+			<attribute key="elemental damage" value="3"/>
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost distance" value="3"/>
+		</attribute>
+	</item>
+	<item id="43877" name="grand sanguine bow">
+		<attribute key="weaponType" value="distance"/>
+		<attribute key="slotType" value="two-handed"/>
+		<attribute key="ammotype" value="arrow"/>
+		<attribute key="absorbpercentholy" value="7"/>
+		<attribute key="criticalhitdamage" value="50"/>
+		<attribute key="criticalhitchance" value="20"/>
+		<attribute key="skilldist" value="7"/>
+		<attribute key="hitchance" value="50"/>
+		<attribute key="range" value="7"/>
+		<attribute key="attack" value="30"/>
+		<attribute key="weight" value="4700"/>
+		<attribute key="imbuementslot" value="3">
+			<attribute key="elemental damage" value="3"/>
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost distance" value="3"/>
+		</attribute>
+	</item>
+	<item id="43878" name="sanguine crossbow">
+		<attribute key="weaponType" value="distance"/>
+		<attribute key="slotType" value="two-handed"/>
+		<attribute key="ammotype" value="bolt"/>
+		<attribute key="absorbpercentdeath" value="7"/>
+		<attribute key="skilldist" value="4"/>
+		<attribute key="criticalhitdamage" value="60"/>
+		<attribute key="criticalhitchance" value="10"/>
+		<attribute key="hitchance" value="50"/>
+		<attribute key="range" value="7"/>
+		<attribute key="attack" value="35"/>
+		<attribute key="weight" value="4000"/>
+		<attribute key="imbuementslot" value="3">
+			<attribute key="elemental damage" value="3"/>
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost distance" value="3"/>
+		</attribute>
+	</item>
+	<item id="43879" name="grand sanguine crossbow">
+		<attribute key="weaponType" value="distance"/>
+		<attribute key="slotType" value="two-handed"/>
+		<attribute key="ammotype" value="bolt"/>
+		<attribute key="absorbpercentdeath" value="7"/>
+		<attribute key="skilldist" value="10"/>
+		<attribute key="criticalhitdamage" value="60"/>
+		<attribute key="criticalhitchance" value="20"/>
+		<attribute key="hitchance" value="80"/>
+		<attribute key="range" value="6"/>
+		<attribute key="attack" value="50"/>
+		<attribute key="weight" value="4000"/>
+		<attribute key="imbuementslot" value="3">
+			<attribute key="elemental damage" value="3"/>
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost distance" value="3"/>
+		</attribute>
+	</item>
+	<item id="43880" name="sanguine coil">
+		<attribute key="weaponType" value="wand"/>
+		<attribute key="shootType" value="suddendeath"/>
+		<attribute key="absorbpercentdeath" value="12"/>
+		<attribute key="magicpoints" value="10"/>
+		<attribute key="criticalhitdamage" value="60"/>
+		<attribute key="criticalhitchance" value="10"/>
+		<attribute key="range" value="7"/>
+		<attribute key="weight" value="1900"/>
+		<attribute key="imbuementslot" value="3">
+			<attribute key="elemental damage" value="3"/>
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost wand" value="3"/>
+		</attribute>
+	</item>
+	<item id="43881" name="grand sanguine coil">
+		<attribute key="weaponType" value="wand"/>
+		<attribute key="shootType" value="suddendeath"/>
+		<attribute key="absorbpercentdeath" value="12"/>
+		<attribute key="magicpoints" value="10"/>
+		<attribute key="criticalhitdamage" value="60"/>
+		<attribute key="criticalhitchance" value="20"/>
+		<attribute key="range" value="7"/>
+		<attribute key="weight" value="1900"/>
+		<attribute key="imbuementslot" value="3">
+			<attribute key="elemental damage" value="3"/>
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost wand" value="3"/>
+		</attribute>
+	</item>
+	<item id="43882" name="sanguine rod">
+		<attribute key="weaponType" value="wand"/>
+		<attribute key="shootType" value="smallice"/>
+		<attribute key="absorbpercentice" value="12"/>
+		<attribute key="magicpoints" value="10"/>
+		<attribute key="manaleechamount" value="300"/>
+		<attribute key="manaleechchance" value="100"/>
+		<attribute key="lifeleechamount" value="500"/>
+		<attribute key="lifeleechchance" value="100"/>
+		<attribute key="range" value="6"/>
+		<attribute key="weight" value="2500"/>
+		<attribute key="imbuementslot" value="3">
+			<attribute key="elemental damage" value="3"/>
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost wand" value="3"/>
+		</attribute>
+	</item>
+	<item id="43883" name="grand sanguine rod">
+		<attribute key="weaponType" value="wand"/>
+		<attribute key="shootType" value="smallice"/>
+		<attribute key="absorbpercentice" value="12"/>
+		<attribute key="magicpoints" value="10"/>
+		<attribute key="criticalhitdamage" value="60"/>
+		<attribute key="criticalhitchance" value="20"/>
+		<attribute key="manaleechamount" value="300"/>
+		<attribute key="manaleechchance" value="100"/>
+		<attribute key="lifeleechamount" value="500"/>
+		<attribute key="lifeleechchance" value="100"/>
+		<attribute key="range" value="7"/>
+		<attribute key="weight" value="2500"/>
+		<attribute key="imbuementslot" value="3">
+			<attribute key="elemental damage" value="3"/>
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost wand" value="3"/>
+		</attribute>
+	</item>
+	<item id="43884" name="sanguine greaves">
+		<attribute key="absorbpercentfire" value="10"/>
+		<attribute key="skilldist" value="10"/>
+		<attribute key="armor" value="10"/>
+		<attribute key="weight" value="3800"/>
+		
+	</item>
+	<item id="43885" name="sanguine legs">
+		<attribute key="absorbpercentfire" value="10"/>
+		<attribute key="magicpoints" value="3"/>
+		<attribute key="armor" value="10"/>
+		<attribute key="weight" value="3800"/>
+	</item>
+	<item id="43886" name="sanguine boots">
+		<attribute key="absorbpercentphysical" value="5"/>
+		<attribute key="magicpoints" value="10"/>
+		<attribute key="speed" value="25"/>
+		<attribute key="armor" value="3"/>
+		<attribute key="weight" value="1300"/>
+	</item>
+	<item id="43887" name="sanguine galoshes">
+		<attribute key="absorbpercentphysical" value="5"/>
+		<attribute key="magicpoints" value="10"/>
+		<attribute key="speed" value="25"/>
+		<attribute key="armor" value="3"/>
+		<attribute key="weight" value="1300"/>
+	</item>
+ <item id="43501" name="the essence of Murcion">
+    <attribute key="description" value="This is the rotten essence of Murcion. It can be consumed to imbue yourself with it" />
+  </item>
+  <item id="43502" name="the essence of Ichgahal">
+    <attribute key="description" value="This is the rotten essence of Ichgahal. It can be consumed to imbue yourself with it" />
+  </item>
+  <item id="43503" name="the essence of Vemiath">
+    <attribute key="description" value="This is the rotten essence of Vemiath. It can be consumed to imbue yourself with it" />
+  </item>
+  <item id="43504" name="the essence of Chagorz">
+    <attribute key="description" value="This is the rotten essence of Chagorz. It can be consumed to imbue yourself with it" />
+  </item>
+	<item id="43901" name="toy ball">
+		<attribute key="weight" value="150" />
 	</item>
 </items>

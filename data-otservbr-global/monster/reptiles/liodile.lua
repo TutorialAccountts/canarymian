@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Liodile")
 local monster = {}
 
 monster.description = "a liodile"
-monster.experience = 6860
+monster.experience = 62860
 monster.outfit = {
 	lookType = 1602,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Ingol"
 	}
 
-monster.health = 8600
-monster.maxHealth = 8600
+monster.health = 78600
+monster.maxHealth = 78600
 monster.race = "blood"
 monster.corpse = 42214
 monster.speed = 165
@@ -80,6 +80,9 @@ monster.loot = {
 	{name = "green crystal shard", chance = 5360},
 	{name = "liodile fang", chance = 4030, maxCount = 3},
 	{name = "yellow gem", chance = 3720},
+	{id = 3043, chance = 100000, maxCount = 2}, -- crystal coin
+	{id = 34109, chance = 10}, -- bag you desire
+	{id = 39546, chance = 10}, -- primal bag
 	{name = "assassin dagger", chance = 2600},
 	{name = "terra legs", chance = 2420},
 	{name = "springsprout rod", chance = 1610},
@@ -88,9 +91,9 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -500},
-	{name ="combat", interval = 2000, chance = 30, type = COMBAT_EARTHDAMAGE, minDamage = -325, maxDamage = -400, range = 7, shootEffect = CONST_ANI_POISONARROW, target = true},
-	{name ="combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -300, maxDamage = -400, range = 2, effect = CONST_ME_GROUNDSHAKER, target = true},
+	{name ="melee", interval = 2000, chance = 100, minDamage = 1800, maxDamage = -3500},
+	{name ="combat", interval = 2000, chance = 30, type = COMBAT_EARTHDAMAGE, minDamage = -1825, maxDamage = -3400, range = 7, shootEffect = CONST_ANI_POISONARROW, target = true},
+	{name ="combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -1700, maxDamage = -3400, range = 2, effect = CONST_ME_GROUNDSHAKER, target = true},
 }
 
 monster.defenses = {

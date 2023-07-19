@@ -248,9 +248,6 @@
 	<house name="Beach Home Apartments, Flat 15" houseid="2915" entryx="32309" entryy="32234" entryz="6" rent="25000" townid="8" size="4" />
 	<house name="Beach Home Apartments, Flat 16" houseid="2916" entryx="32303" entryy="32244" entryz="6" rent="80000" townid="8" size="14" />
 	<house name="Demon Tower" houseid="2917" entryx="32601" entryy="32116" entryz="7" rent="100000" townid="8" size="59" />
-	<house name="Farm Lane, 1st floor (Shop)" houseid="2918" entryx="32382" entryy="32232" entryz="7" rent="80000" townid="8" size="15" />
-	<house name="Farm Lane, 2nd Floor (Shop)" houseid="2919" entryx="32382" entryy="32233" entryz="6" rent="50000" townid="8" size="15" />
-	<house name="Farm Lane, Basement (Shop)" houseid="2920" entryx="32382" entryy="32231" entryz="8" rent="50000" townid="8" size="15" />
 	<house name="Fibula Village 1" houseid="2921" entryx="32176" entryy="32433" entryz="7" rent="25000" townid="8" size="10" />
 	<house name="Fibula Village 2" houseid="2922" entryx="32184" entryy="32433" entryz="7" rent="25000" townid="8" size="10" />
 	<house name="Fibula Village 4" houseid="2923" entryx="32175" entryy="32440" entryz="7" rent="25000" townid="8" size="21" />
@@ -269,15 +266,11 @@
 	<house name="Greenshore Village 3" houseid="2936" entryx="32264" entryy="32041" entryz="7" rent="50000" townid="8" size="20" />
 	<house name="Greenshore Village 2" houseid="2939" entryx="32264" entryy="32042" entryz="7" rent="50000" townid="8" size="20" />
 	<house name="Greenshore Village 6" houseid="2940" entryx="32258" entryy="32041" entryz="6" rent="150000" townid="8" size="62" />
-	<house name="Harbour Place 1 (Shop)" houseid="2941" entryx="32336" entryy="32222" entryz="7" rent="800000" townid="8" size="14" />
+	<house name="Harbour Place 1 (Shop)" houseid="2941" entryx="32336" entryy="32222" entryz="7" rent="800000" townid="8" size="85" />
 	<house name="Harbour Place 2 (Shop)" houseid="2942" entryx="32336" entryy="32210" entryz="7" rent="600000" townid="8" size="19" />
-	<house name="Harbour Place 3" houseid="2943" entryx="32331" entryy="32208" entryz="7" rent="800000" townid="8" size="84" />
 	<house name="Harbour Place 4" houseid="2944" entryx="32332" entryy="32257" entryz="7" rent="80000" townid="8" size="14" />
 	<house name="Lower Swamp Lane 1" houseid="2945" entryx="32356" entryy="32262" entryz="7" rent="400000" townid="8" size="58" />
 	<house name="Lower Swamp Lane 3" houseid="2946" entryx="32368" entryy="32262" entryz="7" rent="400000" townid="8" size="58" />
-	<house name="Main Street 9, 1st floor (Shop)" houseid="2947" entryx="32377" entryy="32224" entryz="7" rent="200000" townid="8" size="25" />
-	<house name="Main Street 9a, 2nd floor (Shop)" houseid="2948" entryx="32377" entryy="32222" entryz="6" rent="100000" townid="8" size="12" />
-	<house name="Main Street 9b, 2nd floor (Shop)" houseid="2949" entryx="32377" entryy="32224" entryz="6" rent="150000" townid="8" size="22" />
 	<house name="Mill Avenue 1 (Shop)" houseid="2950" entryx="32398" entryy="32181" entryz="7" rent="200000" townid="8" size="18" />
 	<house name="Mill Avenue 2 (Shop)" houseid="2951" entryx="32404" entryy="32181" entryz="7" rent="200000" townid="8" size="35" />
 	<house name="Mill Avenue 3" houseid="2952" entryx="32410" entryy="32184" entryz="7" rent="100000" townid="8" size="21" />
@@ -292,9 +285,9 @@
 	<house name="Sorcerer's Avenue Labs 2a" houseid="2961" entryx="32297" entryy="32273" entryz="8" rent="50000" townid="8" size="24" />
 	<house name="Sorcerer's Avenue Labs 2c" houseid="2962" entryx="32297" entryy="32274" entryz="8" rent="50000" townid="8" size="24" />
 	<house name="Sorcerer's Avenue Labs 2b" houseid="2963" entryx="32301" entryy="32274" entryz="8" rent="50000" townid="8" size="24" />
-	<house name="Sunset Homes, Flat 01" houseid="2964" entryx="32333" entryy="32232" entryz="7" rent="100000" townid="8" size="10" />
-	<house name="Sunset Homes, Flat 02" houseid="2965" entryx="32333" entryy="32237" entryz="7" rent="80000" townid="8" size="10" />
-	<house name="Sunset Homes, Flat 03" houseid="2966" entryx="32334" entryy="32244" entryz="7" rent="80000" townid="8" size="10" />
+	<house name="Sunset Homes, Flat 01" houseid="2964" entryx="32335" entryy="32232" entryz="7" rent="100000" townid="8" size="18" />
+	<house name="Sunset Homes, Flat 02" houseid="2965" entryx="32335" entryy="32236" entryz="7" rent="80000" townid="8" size="16" />
+	<house name="Sunset Homes, Flat 03" houseid="2966" entryx="32336" entryy="32245" entryz="7" rent="80000" townid="8" size="19" />
 	<house name="Sunset Homes, Flat 11" houseid="2967" entryx="32333" entryy="32232" entryz="6" rent="80000" townid="8" size="10" />
 	<house name="Sunset Homes, Flat 12" houseid="2968" entryx="32333" entryy="32237" entryz="6" rent="50000" townid="8" size="10" />
 	<house name="Sunset Homes, Flat 13" houseid="2969" entryx="32334" entryy="32244" entryz="6" rent="100000" townid="8" size="14" />
@@ -334,7 +327,7 @@
 	<house name="The City Wall 5e" houseid="3003" entryx="32416" entryy="32226" entryz="7" rent="50000" townid="8" size="10" />
 	<house name="Warriors' Guildhall" houseid="3004" entryx="32348" entryy="32213" entryz="7" rent="5000000" guildhall="true" townid="8" size="260" />
 	<house name="The Tibianic" houseid="3005" entryx="32277" entryy="32011" entryz="5" rent="500000" guildhall="true" townid="8" size="446" />
-	<house name="Bloodhall" houseid="3006" entryx="32469" entryy="32170" entryz="7" rent="500000" guildhall="true" townid="8" size="240" />
+	<house name="Bloodhall" houseid="3006" entryx="32469" entryy="32170" entryz="7" rent="500000" guildhall="true" townid="8" size="260" />
 	<house name="Fibula Clanhall" houseid="3007" entryx="32178" entryy="32373" entryz="7" rent="250000" guildhall="true" townid="8" size="127" />
 	<house name="Dark Mansion" houseid="3008" entryx="32397" entryy="32155" entryz="7" rent="1000000" guildhall="true" townid="8" size="289" />
 	<house name="Halls of the Adventurers" houseid="3009" entryx="32396" entryy="32042" entryz="7" rent="250000" guildhall="true" townid="8" size="240" />
@@ -358,7 +351,7 @@
 	<house name="Dream Street 4" houseid="3027" entryx="32898" entryy="32042" entryz="6" rent="400000" townid="9" size="64" />
 	<house name="Old Lighthouse" houseid="3028" entryx="32926" entryy="32037" entryz="6" rent="200000" townid="9" size="73" />
 	<house name="Market Street 1" houseid="3029" entryx="32932" entryy="32051" entryz="6" rent="600000" townid="9" size="133" />
-	<house name="Market Street 3" houseid="3030" entryx="32950" entryy="32052" entryz="6" rent="600000" townid="9" size="69" />
+	<house name="Market Street 3" houseid="3030" entryx="32950" entryy="32052" entryz="6" rent="600000" townid="9" size="70" />
 	<house name="Market Street 4 (Shop)" houseid="3031" entryx="32960" entryy="32052" entryz="6" rent="800000" townid="9" size="93" />
 	<house name="Market Street 5 (Shop)" houseid="3032" entryx="32964" entryy="32053" entryz="6" rent="800000" townid="9" size="118" />
 	<house name="Market Street 2" houseid="3033" entryx="32944" entryy="32053" entryz="6" rent="600000" townid="9" size="94" />
@@ -937,7 +930,6 @@
 	<house name="Quay 1" houseid="3636" entryx="33885" entryy="31552" entryz="7" rent="200000" townid="22" size="76" />
 	<house name="Quay 2" houseid="3637" entryx="33896" entryy="31544" entryz="7" rent="200000" townid="22" size="121" />
 	<house name="Halls of Sun and Sea" houseid="3638" entryx="33909" entryy="31535" entryz="7" rent="1000000" guildhall="true" townid="22" size="334" />
-	<house name="Palace Vicinity" houseid="3639" entryx="33866" entryy="31516" entryz="7" rent="200000" townid="22" size="109" />
 	<house name="Wave Tower" houseid="3640" entryx="33879" entryy="31525" entryz="7" rent="400000" townid="22" size="166" />
 	<house name="Old Sanctuary of God King Qjell" houseid="3641" entryx="33473" entryy="31310" entryz="9" rent="300000" townid="18" size="408" />
 	<house name="Old Heritage Estate" houseid="3642" entryx="33598" entryy="31909" entryz="6" rent="600000" townid="20" size="231" />
@@ -984,4 +976,18 @@
 	<house name="Pilchard Bin 9" houseid="3684" entryx="32281" entryy="31152" entryz="6" rent="50000" townid="16" size="7" />
 	<house name="Pilchard Bin 10" houseid="3685" entryx="32281" entryy="31148" entryz="6" rent="0" townid="16" size="7" />
 	<house name="Mammoth House" houseid="3686" entryx="32234" entryy="31227" entryz="7" rent="300000" townid="16" size="160" />
+	<house name="Unnamed House #3695" houseid="3695" entryx="32332" entryy="32259" entryz="7" rent="0" townid="8" size="10" />
+	<house name="Unnamed House #3696" houseid="3696" entryx="32375" entryy="32240" entryz="7" rent="0" townid="8" size="61" />
+	<house name="Unnamed House #3697" houseid="3697" entryx="32375" entryy="32233" entryz="7" rent="0" townid="8" size="44" />
+	<house name="Unnamed House #3698" houseid="3698" entryx="32374" entryy="32226" entryz="7" rent="0" townid="8" size="38" />
+	<house name="Unnamed House #3699" houseid="3699" entryx="32374" entryy="32220" entryz="7" rent="0" townid="8" size="35" />
+	<house name="Unnamed House #3701" houseid="3701" entryx="32400" entryy="32216" entryz="7" rent="0" townid="8" size="81" />
+	<house name="Unnamed House #3702" houseid="3702" entryx="32405" entryy="32216" entryz="7" rent="0" townid="8" size="38" />
+	<house name="Unnamed House #3703" houseid="3703" entryx="32333" entryy="32261" entryz="7" rent="0" townid="8" size="47" />
+	<house name="Unnamed House #3704" houseid="3704" entryx="32391" entryy="32239" entryz="7" rent="0" townid="8" size="147" />
+	<house name="Unnamed House #3705" houseid="3705" entryx="32394" entryy="32230" entryz="7" rent="0" townid="8" size="90" />
+	<house name="Unnamed House #3706" houseid="3706" entryx="32331" entryy="32208" entryz="7" rent="0" townid="8" size="30" />
+	<house name="Unnamed House #3707" houseid="3707" entryx="32334" entryy="32208" entryz="6" rent="0" townid="8" size="54" />
+	<house name="Unnamed House #3709" houseid="3709" entryx="32390" entryy="32216" entryz="7" rent="0" townid="8" size="29" />
+	<house name="Unnamed House #3710" houseid="3710" entryx="32375" entryy="32213" entryz="7" rent="0" townid="8" size="37" />
 </houses>

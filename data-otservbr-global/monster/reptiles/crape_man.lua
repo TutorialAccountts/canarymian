@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Crape Man")
 local monster = {}
 
 monster.description = "a crape man"
-monster.experience = 5040
+monster.experience = 63000
 monster.outfit = {
 	lookType = 1601,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Ingol"
 	}
 
-monster.health = 9150
-monster.maxHealth = 9150
+monster.health = 77600
+monster.maxHealth = 77600
 monster.race = "blood"
 monster.corpse = 42210
 monster.speed = 155
@@ -82,6 +82,9 @@ monster.loot = {
 	{name = "green gem", chance = 3010},
 	{name = "great health potion", chance = 2000, maxCount = 5},
 	{id = 281, chance = 1700}, -- giant shimmering pearl (green)
+	{id = 3043, chance = 100000, maxCount = 2}, -- crystal coin
+	{id = 34109, chance = 10}, -- bag you desire
+	{id = 39546, chance = 10}, -- primal bag
 	{name = "lightning legs", chance = 1200},
 	{name = "warrior's shield", chance = 1200},
 	{name = "glacier kilt", chance = 1000},
@@ -91,10 +94,10 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -498},
-	{name ="combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -120, maxDamage = -320, range = 7, shootEffect = CONST_ANI_SUDDENDEATH, target = true},
-	{name ="combat", interval = 2000, chance = 30, type = COMBAT_ENERGYDAMAGE, minDamage = -330, maxDamage = -380, range = 7, radius = 4, shootEffect = CONST_ANI_ENERGYBALL, effect = CONST_ME_PURPLEENERGY, target = true},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_ENERGYDAMAGE, minDamage = -311, maxDamage = -370, length = 3, spread = 3, effect = CONST_ME_ENERGYHIT, target = false},
+	{name ="melee", interval = 2000, chance = 100, minDamage = 1800, maxDamage = -3498},
+	{name ="combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -1720, maxDamage = -3320, range = 7, shootEffect = CONST_ANI_SUDDENDEATH, target = true},
+	{name ="combat", interval = 2000, chance = 30, type = COMBAT_ENERGYDAMAGE, minDamage = -1830, maxDamage = -3380, range = 7, radius = 4, shootEffect = CONST_ANI_ENERGYBALL, effect = CONST_ME_PURPLEENERGY, target = true},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_ENERGYDAMAGE, minDamage = -1811, maxDamage = -3370, length = 3, spread = 3, effect = CONST_ME_ENERGYHIT, target = false},
 }
 
 monster.defenses = {

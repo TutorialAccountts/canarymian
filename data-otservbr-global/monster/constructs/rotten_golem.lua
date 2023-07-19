@@ -92,14 +92,14 @@ monster.loot = {
 	{name = "wood cape", chance = 2500},
 	{name = "rubber cap", chance = 1500},
 	{name = "stone skin amulet", chance = 2000},
-	{id = 34109, chance = 50} -- bag you desire
+	{id = 34109, chance = 10} -- bag you desire
 }
 
 monster.attacks = {
 	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -950},
 	{name ="combat", interval = 2000, chance = 15, type = COMBAT_HOLYDAMAGE, minDamage = -650, maxDamage = -900, range = 7, shootEffect = CONST_ANI_SMALLHOLY, effect = CONST_ME_HOLYAREA, target = true},
 	{name ="combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -750, maxDamage = -1200, radius = 7, effect = CONST_ME_BIGPLANTS, target = false},
-	{name ="root", interval = 2000, chance = 10, target = true}
+	{name ="root", interval = 5000, chance = 3, target = true}
 	-- Chain: const_me-> CONST_ME_GREEN_ENERGY_SPARK, combat_t->COMBAT_EARTHDAMAGE
 }
 

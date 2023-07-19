@@ -794,25 +794,6 @@ QuestDoorAction = {
 			{x = 32012, y = 31565, z = 7}
 		}
 	},
-	[Storage.TheSecretLibrary.MiniBosses.PreceptorLazare] = {
-		itemId = 6260,
-		itemPos = {{x = 33376, y = 31335, z = 3}}
-	},
-	[Storage.TheSecretLibrary.LowerBastionAccess] = {
-		itemId = 6260,
-		itemPos = {
-			{x = 33371, y = 31349, z = 4},
-			{x = 33375, y = 31346, z = 5}
-		}
-	},
-	[Storage.TheSecretLibrary.UndergroundBastionAccess] = {
-		itemId = false,
-		itemPos = {
-			{x = 33366, y = 31343, z = 7},
-			{x = 33363, y = 31346, z = 7},
-			{x = 32191, y = 31823, z = 8}
-		}
-	},
 	[Storage.Quest.U12_20.GraveDanger.Bosses.KingZelosDoor] = {
 		itemId = false,
 		itemPos = {{x = 32173, y = 31922, z = 8}}

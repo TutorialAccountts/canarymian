@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Gravedigger")
 local monster = {}
 
 monster.description = "a gravedigger"
-monster.experience = 950
+monster.experience = 44500
 monster.outfit = {
 	lookType = 558,
 	lookHead = 0,
@@ -27,8 +27,8 @@ monster.Bestiary = {
 		including the Drefia Grim Reaper Dungeons and the Drefia Vampire Crypt."
 	}
 
-monster.health = 1500
-monster.maxHealth = 1500
+monster.health = 31500
+monster.maxHealth = 31500
 monster.race = "blood"
 monster.corpse = 18962
 monster.speed = 120
@@ -88,6 +88,9 @@ monster.loot = {
 	{name = "skull staff", chance = 130},
 	{name = "mysterious voodoo skull", chance = 100},
 	{id = 6299, chance = 800}, -- death ring
+	{id = 3043, chance = 100000, maxCount = 2}, -- crystal coin
+	{id = 34109, chance = 10}, -- bag you desire
+	{id = 39546, chance = 10}, -- primal bag
 	{name = "strong health potion", chance = 2260, maxCount = 2},
 	{name = "strong mana potion", chance = 3600, maxCount = 2},
 	{name = "unholy bone", chance = 9570},
@@ -96,9 +99,9 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -320, condition = {type = CONDITION_POISON, totalDamage = 180, interval = 4000}},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_MANADRAIN, minDamage = -40, maxDamage = -250, range = 1, effect = CONST_ME_MAGIC_BLUE, target = false},
-	{name ="combat", interval = 2000, chance = 15, type = COMBAT_DEATHDAMAGE, minDamage = -175, maxDamage = -300, range = 1, shootEffect = CONST_ANI_DEATH, target = false},
+	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1720, condition = {type = CONDITION_POISON, totalDamage = 180, interval = 4000}},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_MANADRAIN, minDamage = -40, maxDamage = -1650, range = 1, effect = CONST_ME_MAGIC_BLUE, target = false},
+	{name ="combat", interval = 2000, chance = 15, type = COMBAT_DEATHDAMAGE, minDamage = -175, maxDamage = -1800, range = 1, shootEffect = CONST_ANI_DEATH, target = false},
 	{name ="drunk", interval = 2000, chance = 10, radius = 5, effect = CONST_ME_SMALLCLOUDS, target = false, duration = 4000}
 }
 

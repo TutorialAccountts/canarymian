@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Rhindeer")
 local monster = {}
 
 monster.description = "a rhindeer"
-monster.experience = 5600
+monster.experience = 65600
 monster.outfit = {
 	lookType = 1606,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Ingol"
 	}
 
-monster.health = 8650
-monster.maxHealth = 8650
+monster.health = 78650
+monster.maxHealth = 78650
 monster.race = "blood"
 monster.corpse = 42230
 monster.speed = 160
@@ -86,17 +86,20 @@ monster.loot = {
 	{name = "yellow gem", chance = 1880},
 	{name = "knight armor", chance = 1380},
 	{id = 23527, chance = 890}, -- collar of green plasma
+	{id = 3043, chance = 100000, maxCount = 3}, -- crystal coin
+	{id = 34109, chance = 10}, -- bag you desire
+	{id = 39546, chance = 10}, -- primal bag
 	{name = "heavy mace", chance = 890},
 	{name = "mastermind shield", chance = 690},
 	{id = 3053, chance = 690}, -- time ring
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -471},
-	{name ="combat", interval = 2000, chance = 20, minDamage = -265, maxDamage = -415, range = 3, radius = 4, effect = CONST_ME_EXPLOSIONHIT, target = true},
-	{name ="combat", interval = 2000, chance = 30, type = COMBAT_EARTHDAMAGE, minDamage = -325, maxDamage = -400, range = 7, shootEffect = CONST_ANI_POISONARROW, target = true},
-	{name ="combat", interval = 2000, chance = 30, type = COMBAT_PHYSICALDAMAGE, minDamage = -265, maxDamage = -411, range = 1, radius = 4, effect = CONST_ME_EXPLOSIONAREA, target = false},
-	{name ="combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -200, maxDamage = -300, range = 2, effect = CONST_ME_GROUNDSHAKER, target = true},
+	{name ="melee", interval = 2000, chance = 100, minDamage = 1800, maxDamage = -3471},
+	{name ="combat", interval = 2000, chance = 20, minDamage = -1865, maxDamage = -3415, range = 3, radius = 4, effect = CONST_ME_EXPLOSIONHIT, target = true},
+	{name ="combat", interval = 2000, chance = 30, type = COMBAT_EARTHDAMAGE, minDamage = -1825, maxDamage = -3400, range = 7, shootEffect = CONST_ANI_POISONARROW, target = true},
+	{name ="combat", interval = 2000, chance = 30, type = COMBAT_PHYSICALDAMAGE, minDamage = -1865, maxDamage = -3411, range = 1, radius = 4, effect = CONST_ME_EXPLOSIONAREA, target = false},
+	{name ="combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -1800, maxDamage = -3300, range = 2, effect = CONST_ME_GROUNDSHAKER, target = true},
 }
 
 monster.defenses = {

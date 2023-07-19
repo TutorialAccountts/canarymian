@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Reality Reaver")
 local monster = {}
 
 monster.description = "a reality reaver"
-monster.experience = 2480
+monster.experience = 38000
 monster.outfit = {
 	lookType = 879,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Otherworld."
 	}
 
-monster.health = 3900
-monster.maxHealth = 3900
+monster.health = 39000
+monster.maxHealth = 39000
 monster.race = "venom"
 monster.corpse = 23412
 monster.speed = 170
@@ -77,7 +77,9 @@ monster.voices = {
 }
 
 monster.loot = {
-	{id = 3031, chance = 100000, maxCount = 100}, -- gold coin
+	{id = 3043, chance = 100000, maxCount = 2}, -- crystal coin
+	{id = 34109, chance = 10}, -- bag you desire
+	{id = 39546, chance = 10}, -- primal bag
 	{id = 3035, chance = 100000, maxCount = 6}, -- platinum coin
 	{id = 23545, chance = 15000}, -- energy drink
 	{id = 23535, chance = 15000}, -- energy bar
@@ -102,11 +104,11 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -500},
-	{name ="combat", interval = 2000, chance = 20, type = COMBAT_ENERGYDAMAGE, minDamage = -180, maxDamage = -400, range = 5, radius = 5, shootEffect = CONST_ANI_ENERGYBALL, effect = CONST_ME_PURPLEENERGY, target = true},
-	{name ="reality reaver wave", interval = 2000, chance = 20, minDamage = -200, maxDamage = -500, target = false},
+	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1500},
+	{name ="combat", interval = 2000, chance = 20, type = COMBAT_ENERGYDAMAGE, minDamage = -180, maxDamage = -1400, range = 5, radius = 5, shootEffect = CONST_ANI_ENERGYBALL, effect = CONST_ME_PURPLEENERGY, target = true},
+	{name ="reality reaver wave", interval = 2000, chance = 20, minDamage = -200, maxDamage = -1500, target = false},
 	-- energy damage
-	{name ="condition", type = CONDITION_ENERGY, interval = 2000, chance = 20, minDamage = -400, maxDamage = -800, radius = 5, effect = CONST_ME_STUN, target = false}
+	{name ="condition", type = CONDITION_ENERGY, interval = 2000, chance = 20, minDamage = -400, maxDamage = -1800, radius = 5, effect = CONST_ME_STUN, target = false}
 }
 
 monster.defenses = {

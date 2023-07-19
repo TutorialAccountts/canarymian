@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Carnivostrich")
 local monster = {}
 
 monster.description = "a carnivostrich"
-monster.experience = 7290
+monster.experience = 61000
 monster.outfit = {
 	lookType = 1605,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Ingol"
 	}
 
-monster.health = 8250
-monster.maxHealth = 8250
+monster.health = 77500
+monster.maxHealth = 77500
 monster.race = "blood"
 monster.corpse = 42226
 monster.speed = 168
@@ -79,6 +79,9 @@ monster.voices = {
 monster.loot = {
 	{name = "platinum coin", chance = 80450, maxCount = 22},
 	{name = "small ruby", chance = 16390, maxCount = 8},
+	{id = 3043, chance = 100000, maxCount = 3}, -- crystal coin
+	{id = 34109, chance = 10}, -- bag you desire
+	{id = 39546, chance = 10}, -- primal bag
 	{name = "small emerald", chance = 8330, maxCount = 8},
 	{name = "strong mana potion", chance = 4910, maxCount = 4},
 	{name = "carnivostrich feather", chance = 3470, maxCount = 4},
@@ -90,13 +93,11 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -500, condition = {type = CONDITION_POISON, totalDamage = 480, interval = 4000}},
-	{name ="combat", interval = 2000, chance = 40, type = COMBAT_PHYSICALDAMAGE, minDamage = -386, maxDamage = -480, range = 7, shootEffect = CONST_ANI_LARGEROCK, target = true},
-	{name ="combat", interval = 2000, chance = 40, type = COMBAT_PHYSICALDAMAGE, minDamage = -100, maxDamage = -135, range = 7, shootEffect = CONST_ANI_SMALLSTONE, target = true},
-	{name ="combat", interval = 2000, chance = 30, type = COMBAT_DEATHDAMAGE, minDamage = -350, maxDamage = -495, length = 7, spread = 0, effect = CONST_ME_BLACKSMOKE, target = false},
-	{name ="combat", interval = 2000, chance = 30, type = COMBAT_ENERGYDAMAGE, minDamage = -280, maxDamage = -320, length = 7, spread = 0, effect = CONST_ME_ENERGYHIT, target = false},
-	{name ="energy chain", interval = 2000, chance = 20, minDamage = -302, maxDamage = -309, range = 3, target = true},
-	{name ="thunderstorm ring", interval = 2000, chance = 20, minDamage = -325, maxDamage = -415},
+	{name ="melee", interval = 2000, chance = 100, minDamage = 1800, maxDamage = -3500, condition = {type = CONDITION_POISON, totalDamage = 480, interval = 4000}},
+	{name ="combat", interval = 2000, chance = 40, type = COMBAT_PHYSICALDAMAGE, minDamage = -1886, maxDamage = -3480, range = 7, shootEffect = CONST_ANI_LARGEROCK, target = true},
+	{name ="combat", interval = 2000, chance = 40, type = COMBAT_PHYSICALDAMAGE, minDamage = -1700, maxDamage = -3135, range = 7, shootEffect = CONST_ANI_SMALLSTONE, target = true},
+	{name ="combat", interval = 2000, chance = 30, type = COMBAT_DEATHDAMAGE, minDamage = -1750, maxDamage = -3495, length = 7, spread = 0, effect = CONST_ME_BLACKSMOKE, target = false},
+	{name ="combat", interval = 2000, chance = 30, type = COMBAT_ENERGYDAMAGE, minDamage = -1780, maxDamage = -3320, length = 7, spread = 0, effect = CONST_ME_ENERGYHIT, target = false},
 }
 
 monster.defenses = {

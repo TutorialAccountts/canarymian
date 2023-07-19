@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Sparkion")
 local monster = {}
 
 monster.description = "a sparkion"
-monster.experience = 1520
+monster.experience = 42000
 monster.outfit = {
 	lookType = 877,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Otherworld."
 	}
 
-monster.health = 2700
-monster.maxHealth = 2700
+monster.health = 37000
+monster.maxHealth = 37000
 monster.race = "venom"
 monster.corpse = 23388
 monster.speed = 151
@@ -78,8 +78,7 @@ monster.voices = {
 }
 
 monster.loot = {
-	{id = 3031, chance = 100000, maxCount = 100}, -- gold coin
-	{id = 3035, chance = 20000, maxCount = 3}, -- platinum coin
+	{id = 3043, chance = 100000, maxCount = 2}, -- crystal coin
 	{id = 23502, chance = 15000}, -- sparkion claw
 	{id = 23545, chance = 15000}, -- energy drink
 	{id = 23535, chance = 14600}, -- energy bar
@@ -100,15 +99,17 @@ monster.loot = {
 	{id = 23529, chance = 240}, -- ring of blue plasma
 	{id = 23543, chance = 240}, -- collar of green plasma
 	{id = 23542, chance = 240}, -- collar of blue plasma
-	{id = 23544, chance = 200} -- collar of red plasma
+	{id = 23544, chance = 200}, -- collar of red plasma
+	{id = 34109, chance = 10}, -- bag you desire
+	{id = 39546, chance = 10} -- primal bag
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -400},
-	{name ="combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -250, maxDamage = -400, length = 6, spread = 3, effect = CONST_ME_GROUNDSHAKER, target = false},
-	{name ="combat", interval = 2000, chance = 25, type = COMBAT_ENERGYDAMAGE, minDamage = -200, maxDamage = -400, range = 5, shootEffect = CONST_ANI_ENERGYBALL, effect = CONST_ME_ENERGYHIT, target = true},
+	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1400},
+	{name ="combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -250, maxDamage = -1400, length = 6, spread = 3, effect = CONST_ME_GROUNDSHAKER, target = false},
+	{name ="combat", interval = 2000, chance = 25, type = COMBAT_ENERGYDAMAGE, minDamage = -200, maxDamage = -1400, range = 5, shootEffect = CONST_ANI_ENERGYBALL, effect = CONST_ME_ENERGYHIT, target = true},
 	-- energy damage
-	{name ="condition", type = CONDITION_ENERGY, interval = 2000, chance = 20, minDamage = -300, maxDamage = -600, range = 6, radius = 4, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_PURPLEENERGY, target = true}
+	{name ="condition", type = CONDITION_ENERGY, interval = 2000, chance = 20, minDamage = -300, maxDamage = -1600, range = 6, radius = 4, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_PURPLEENERGY, target = true}
 }
 
 monster.defenses = {

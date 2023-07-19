@@ -245,12 +245,10 @@ Storage = {
 		},
 		MiniBosses = {
 			GrandCommanderSoeren = 50065,
-			PreceptorLazare = 50066,
 			GrandChaplainGaunder = 50067,
 			GrandCanonDominus = 50068,
 			DazedLeafGolem = 50069
 		},
-		LowerBastionAccess = 50070,
 		UndergroundBastionAccess = 50071,
 		OberonAccess = 50072,
 		ShortcutToBastion = 50073

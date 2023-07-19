@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Wailing Widow")
 local monster = {}
 
 monster.description = "a wailing widow"
-monster.experience = 450
+monster.experience = 34500
 monster.outfit = {
 	lookType = 347,
 	lookHead = 0,
@@ -27,11 +27,11 @@ monster.Bestiary = {
 		Razzachai, Chyllfroest, Krailos Spider Lair."
 	}
 
-monster.health = 850
-monster.maxHealth = 850
+monster.health = 38500
+monster.maxHealth = 38500
 monster.race = "venom"
 monster.corpse = 10393
-monster.speed = 127
+monster.speed = 227
 monster.manaCost = 0
 
 monster.changeTarget = {
@@ -81,6 +81,9 @@ monster.loot = {
 	{name = "plate shield", chance = 2854},
 	{name = "green mushroom", chance = 3208},
 	{name = "health potion", chance = 4761},
+	{id = 3043, chance = 100000, maxCount = 2}, -- crystal coin
+	{id = 34109, chance = 10}, -- bag you desire
+	{id = 39546, chance = 10}, -- primal bag
 	{name = "mana potion", chance = 4785},
 	{name = "zaoan halberd", chance = 2210},
 	{name = "widow's mandibles", chance = 20950},
@@ -88,10 +91,10 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -120, condition = {type = CONDITION_POISON, totalDamage = 160, interval = 4000}},
+	{name ="melee", interval = 2000, chance = 100, minDamage = 600, maxDamage = -1800, condition = {type = CONDITION_POISON, totalDamage = 160, interval = 4000}},
 	{name ="drunk", interval = 2000, chance = 20, range = 7, radius = 4, effect = CONST_ME_SOUND_RED, target = false, duration = 4000},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_LIFEDRAIN, minDamage = -40, maxDamage = -70, radius = 3, effect = CONST_ME_MAGIC_RED, target = false},
-	{name ="combat", interval = 2000, chance = 15, type = COMBAT_EARTHDAMAGE, minDamage = -60, maxDamage = -110, range = 7, shootEffect = CONST_ANI_POISON, target = false}
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_LIFEDRAIN, minDamage = -540, maxDamage = -1700, radius = 3, effect = CONST_ME_MAGIC_RED, target = false},
+	{name ="combat", interval = 2000, chance = 15, type = COMBAT_EARTHDAMAGE, minDamage = -860, maxDamage = -1800, range = 7, shootEffect = CONST_ANI_POISON, target = false}
 }
 
 monster.defenses = {

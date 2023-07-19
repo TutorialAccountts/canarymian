@@ -41,11 +41,6 @@ TeleportUnique = {
 		itemId = 8646,
 		itemPos = {x = 33160, y = 31320, z = 5}
 	},
-	-- Zorvorax entrance
-	[35003] = {
-		itemId = 8648,
-		itemPos = {x = 33003, y = 31593, z = 11}
-	},
 	-- Gelidrazah entrance
 	[35004] = {
 		itemId = 8647,
@@ -345,7 +340,7 @@ TeleportUnique = {
 	[39008] = {
 		itemId = 775,
 		itemPos = {x = 33640, y = 32559, z = 13},
-		destination = {x = 33618, y = 32523, z = 15},
+		destination = {x = 32201, y = 31993, z = 7},
 		effect = CONST_ME_TELEPORT
 	}
 }

@@ -19,17 +19,7 @@ local UniqueTable = {
 		bossName = "Kalyassa",
 		bossPos = {x = 32079, y = 32459, z = 8}
 	},
-	-- Zorvorax entrance
-	[35003] = {
-		storage = Storage.FirstDragon.SecretsCounter,
-		value = 3,
-		range = 10,
-		timer = Storage.FirstDragon.ZorvoraxTimer,
-		newPos = {x = 32008, y = 32396, z = 8},
-		bossName = "Zorvorax",
-		bossPos = {x = 32015, y = 32396, z = 8}
-	},
-	-- Gelidrazah entrance
+		-- Gelidrazah entrance
 	[35004] = {
 		storage = Storage.FirstDragon.GelidrazahAccess,
 		value = 1,

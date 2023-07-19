@@ -26,11 +26,35 @@ local exhaust = Condition(CONDITION_EXHAUST_HEAL)
 exhaust:setParameter(CONDITION_PARAM_TICKS, (configManager.getNumber(configKeys.EX_ACTIONS_DELAY_INTERVAL) - 1000))
 -- 1000 - 100 due to exact condition timing. -100 doesn't hurt us, and players don't have reminding ~50ms exhaustion.
 
+local MAGIC_SHIELD_COOLDOWN = 2000 -- 2000 milliseconds (2 seconds)
+
 local function magicshield(player)
-local condition = Condition(CONDITION_MANASHIELD)
-condition:setParameter(CONDITION_PARAM_TICKS, 60000)
-condition:setParameter(CONDITION_PARAM_MANASHIELD, math.min(player:getMaxMana(), 300 + 7.6 * player:getLevel() + 7 * player:getMagicLevel()))
-player:addCondition(condition)
+    if not player:isPlayer() then
+        return
+    end
+
+    -- Check if the player has a cooldown for the magic shield
+    local lastMagicShieldTime = player:getStorageValue(1000) -- Replace 1000 with a unique value for your magic shield potion
+    
+    -- Get the current time in milliseconds
+    local currentTime = os.time()
+
+    -- If the cooldown has expired or it's the first time using the potion
+    if currentTime >= lastMagicShieldTime then
+        local condition = Condition(CONDITION_MANASHIELD)
+        condition:setParameter(CONDITION_PARAM_TICKS, 60000)
+        condition:setParameter(CONDITION_PARAM_MANASHIELD, math.min(player:getMaxMana(), 300 + 7.6 * player:getLevel() + 7 * player:getMagicLevel()))
+        player:addCondition(condition)
+
+        -- Set the new cooldown time
+        local newCooldownTime = currentTime + MAGIC_SHIELD_COOLDOWN
+        player:setStorageValue(1000, newCooldownTime)
+
+        player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "You use the magic shield potion.")
+    else
+        -- The potion is on cooldown, send a message to the player or handle as you see fit
+        player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "The magic shield potion is on cooldown. You can use it again in " .. math.ceil((lastMagicShieldTime - currentTime) / 1000) .. " seconds.")
+    end
 end
 
 local potions = {

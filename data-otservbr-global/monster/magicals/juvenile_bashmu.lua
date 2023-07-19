@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Juvenile Bashmu")
 local monster = {}
 
 monster.description = "a juvenile bashmu"
-monster.experience = 4500
+monster.experience = 45000
 monster.outfit = {
 	lookType = 1408,
 	lookHead = 0,
@@ -26,11 +26,11 @@ monster.Bestiary = {
 	Locations = "Salt Caves"
 }
 
-monster.health = 7500
-monster.maxHealth = 7500
+monster.health = 37500
+monster.maxHealth = 37500
 monster.race = "blood"
 monster.corpse = 36967
-monster.speed = 195
+monster.speed = 255
 monster.manaCost = 0
 
 monster.changeTarget = {
@@ -78,6 +78,9 @@ monster.loot = {
 	{name = "green crystal shard", chance = 3666},
 	{name = "cyan crystal fragment", chance = 3340},
 	{id = 3039, chance = 2390, maxCount = 1}, -- red gem
+	{id = 3043, chance = 100000, maxCount = 2}, -- crystal coin
+	{id = 34109, chance = 10}, -- bag you desire
+	{id = 39546, chance = 10}, -- primal bag
 	{name = "violet gem", chance = 2340, maxCount = 1},
 	{name = "lightning legs", chance = 2230},
 	{name = "diamond sceptre", chance = 2180},
@@ -98,10 +101,10 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -400},
-	{name ="combat", interval = 2000, chance = 50, type = COMBAT_ENERGYDAMAGE, minDamage = -300, maxDamage = -400, length = 4, spread = 0, effect = CONST_ME_ENERGYAREA, target = false},
-	{name ="combat", interval = 2000, chance = 40, type = COMBAT_ENERGYDAMAGE, minDamage = -400, maxDamage = -500, range = 3, radius = 3, effect = CONST_ME_ENERGYHIT, target = false},
-	{name ="combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -400, maxDamage = -500, range = 7, shootEffect = CONST_ANI_EARTHARROW, target = true},
+	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1800},
+	{name ="combat", interval = 2000, chance = 50, type = COMBAT_ENERGYDAMAGE, minDamage = -300, maxDamage = -1400, length = 4, spread = 0, effect = CONST_ME_ENERGYAREA, target = false},
+	{name ="combat", interval = 2000, chance = 40, type = COMBAT_ENERGYDAMAGE, minDamage = -400, maxDamage = -1500, range = 3, radius = 3, effect = CONST_ME_ENERGYHIT, target = false},
+	{name ="combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -400, maxDamage = -1500, range = 7, shootEffect = CONST_ANI_EARTHARROW, target = true},
 }
 
 monster.defenses = {

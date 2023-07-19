@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Vexclaw")
 local monster = {}
 
 monster.description = "a vexclaw"
-monster.experience = 6248
+monster.experience = 42000
 monster.outfit = {
 	lookType = 854,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "The Dungeons of The Ruthless Seven."
 	}
 
-monster.health = 8500
-monster.maxHealth = 8500
+monster.health = 35000
+monster.maxHealth = 35000
 monster.race = "fire"
 monster.corpse = 22776
 monster.speed = 135
@@ -96,6 +96,9 @@ monster.loot = {
 	{name = "yellow gem", chance = 5090},
 	{name = "wand of voodoo", chance = 4940},
 	{id= 3039, chance = 4730}, -- red gem
+	{id = 3043, chance = 100000, maxCount = 2}, -- crystal coin
+	{id = 34109, chance = 10}, -- bag you desire
+	{id = 39546, chance = 10}, -- primal bag
 	{name = "ice rapier", chance = 4730},
 	{name = "fire axe", chance = 3520},
 	{name = "might ring", chance = 2250},
@@ -112,15 +115,15 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 75, attack = 150},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_MANADRAIN, minDamage = 0, maxDamage = -120, range = 7, target = false},
-	{name ="combat", interval = 2000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -150, maxDamage = -250, range = 7, radius = 7, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA, target = true},
+	{name ="melee", interval = 2000, chance = 100, skill = 115, attack = 250},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_MANADRAIN, minDamage = 0, maxDamage = -1200, range = 7, target = false},
+	{name ="combat", interval = 2000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -150, maxDamage = -1250, range = 7, radius = 7, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA, target = true},
 	{name ="choking fear drown", interval = 2000, chance = 20, target = false},
-	{name ="combat", interval = 2000, chance = 20, type = COMBAT_DEATHDAMAGE, minDamage = -150, maxDamage = -400, radius = 4, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA, target = true},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_LIFEDRAIN, minDamage = -50, maxDamage = -200, length = 8, spread = 3, effect = CONST_ME_PURPLEENERGY, target = false},
+	{name ="combat", interval = 2000, chance = 20, type = COMBAT_DEATHDAMAGE, minDamage = -150, maxDamage = -1800, radius = 4, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA, target = true},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_LIFEDRAIN, minDamage = -50, maxDamage = -1600, length = 8, spread = 3, effect = CONST_ME_PURPLEENERGY, target = false},
 	{name ="firefield", interval = 2000, chance = 10, range = 7, radius = 1, shootEffect = CONST_ANI_FIRE, target = true},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_LIFEDRAIN, minDamage = -300, maxDamage = -490, length = 8, spread = 3, effect = CONST_ME_PURPLEENERGY, target = false},
-	{name ="energy strike", interval = 2000, chance = 10, minDamage = -210, maxDamage = -300, range = 1, target = false},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_LIFEDRAIN, minDamage = -1300, maxDamage = -1690, length = 8, spread = 3, effect = CONST_ME_PURPLEENERGY, target = false},
+	{name ="energy strike", interval = 2000, chance = 10, minDamage = -210, maxDamage = -1300, range = 1, target = false},
 	{name ="speed", interval = 2000, chance = 15, speedChange = -300, radius = 1, effect = CONST_ME_MAGIC_RED, target = true, duration = 30000}
 }
 

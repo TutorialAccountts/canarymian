@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Dark Carnisylvan")
 local monster = {}
 
 monster.description = "a dark carnisylvan"
-monster.experience = 4400
+monster.experience = 44000
 monster.outfit = {
 	lookType = 1418,
 	lookHead = 76,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Forest of Life"
 }
 
-monster.health = 7500
-monster.maxHealth = 7500
+monster.health = 75000
+monster.maxHealth = 75000
 monster.race = "venom"
 monster.corpse = 36892
 monster.speed = 120
@@ -87,6 +87,9 @@ monster.loot = {
 	{name = "hailstorm rod", chance = 3660},
 	{name = "springsprout rod", chance = 2610},
 	{id = 3059, chance = 2350}, -- spellbook
+	{id = 3043, chance = 100000, maxCount = 2}, -- crystal coin
+	{id = 34109, chance = 10}, -- bag you desire
+	{id = 39546, chance = 10}, -- primal bag
 	{name = "spellbook of warding", chance = 3390},
 	{name = "gold ring", chance = 780},
 	{name = "butterfly ring", chance = 520},
@@ -94,9 +97,9 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -300},
-	{name ="combat", interval = 2700, chance = 40, type = COMBAT_DEATHDAMAGE, minDamage = -200, maxDamage = -500, range = 2, radius = 7, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA, target = true},
-	{name ="combat", interval = 2000, chance = 70, type = COMBAT_EARTHDAMAGE, minDamage = -350, maxDamage = -450, range = 5, shootEffect = CONST_ANI_SMALLEARTH, effect = CONST_ME_POISONAREA, target = true},
+	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1900},
+	{name ="combat", interval = 2700, chance = 40, type = COMBAT_DEATHDAMAGE, minDamage = -200, maxDamage = -1500, range = 2, radius = 7, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA, target = true},
+	{name ="combat", interval = 2000, chance = 70, type = COMBAT_EARTHDAMAGE, minDamage = -350, maxDamage = -1450, range = 5, shootEffect = CONST_ANI_SMALLEARTH, effect = CONST_ME_POISONAREA, target = true},
 }
 
 monster.defenses = {

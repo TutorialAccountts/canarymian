@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Boar Man")
 local monster = {}
 
 monster.description = "a boar man"
-monster.experience = 7720
+monster.experience = 60000
 monster.outfit = {
 	lookType = 1603,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Ingol"
 	}
 
-monster.health = 9200
-monster.maxHealth = 9200
+monster.health = 77500
+monster.maxHealth = 77500
 monster.race = "blood"
 monster.corpse = 42218
 monster.speed = 160
@@ -79,6 +79,9 @@ monster.loot = {
 	{name = "platinum coin", chance = 78950, maxCount = 22},
 	{name = "red crystal fragment", chance = 9830, maxCount = 6},
 	{id = 3039, chance = 6390, maxCount = 2}, -- red gem
+	{id = 3043, chance = 100000, maxCount = 3}, -- crystal coin
+	{id = 34109, chance = 10}, -- bag you desire
+	{id = 39546, chance = 10}, -- primal bag
 	{name = "boar man hoof", chance = 4640, maxCount = 2},
 	{name = "great health potion", chance = 3810, maxCount = 4},
 	{name = "sapphire hammer", chance = 2700},
@@ -89,11 +92,11 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -498},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = -375, maxDamage = -392, range = 7, shootEffect = CONST_ANI_THROWINGKNIFE, target = true},
-	{name ="combat", interval = 2000, chance = 25, type = COMBAT_DEATHDAMAGE, minDamage = -386, maxDamage = -480, range = 7, shootEffect = CONST_ANI_SUDDENDEATH, target = true},
-	{name ="combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -60, maxDamage = -140, range = 1, radius = 4, effect = CONST_ME_EXPLOSIONAREA, target = false},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_ENERGYDAMAGE, minDamage = -311, maxDamage = -400, length = 8, spread = 3, effect = CONST_ME_ENERGYHIT, target = false},
+	{name ="melee", interval = 2000, chance = 100, minDamage = 1800, maxDamage = -3498},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = -1750, maxDamage = -3392, range = 7, shootEffect = CONST_ANI_THROWINGKNIFE, target = true},
+	{name ="combat", interval = 2000, chance = 25, type = COMBAT_DEATHDAMAGE, minDamage = -1786, maxDamage = -3480, range = 7, shootEffect = CONST_ANI_SUDDENDEATH, target = true},
+	{name ="combat", interval = 2000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -1600, maxDamage = -3140, range = 1, radius = 4, effect = CONST_ME_EXPLOSIONAREA, target = false},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_ENERGYDAMAGE, minDamage = -1711, maxDamage = -3400, length = 8, spread = 3, effect = CONST_ME_ENERGYHIT, target = false},
 
 }
 

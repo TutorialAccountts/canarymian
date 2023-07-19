@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Nightfiend")
 local monster = {}
 
 monster.description = "a nightfiend"
-monster.experience = 2100
+monster.experience = 42100
 monster.outfit = {
 	lookType = 556,
 	lookHead = 0,
@@ -26,11 +26,11 @@ monster.Bestiary = {
 	Locations = "Deep under Drefia."
 	}
 
-monster.health = 2700
-monster.maxHealth = 2700
+monster.health = 32700
+monster.maxHealth = 32700
 monster.race = "blood"
 monster.corpse = 18952
-monster.speed = 112
+monster.speed = 250
 monster.manaCost = 0
 
 monster.changeTarget = {
@@ -54,8 +54,8 @@ monster.flags = {
 	illusionable = false,
 	canPushItems = true,
 	canPushCreatures = true,
-	staticAttackChance = 90,
-	targetDistance = 4,
+	staticAttackChance = 1,
+	targetDistance = 0,
 	runHealth = 0,
 	healthHidden = false,
 	isBlockable = false,
@@ -86,12 +86,15 @@ monster.loot = {
 	{name = "strong health potion", chance = 4761},
 	{name = "strong mana potion", chance = 5000},
 	{id = 3039, chance = 55}, -- red gem
+	{id = 3043, chance = 100000, maxCount = 2}, -- crystal coin
+	{id = 34109, chance = 10}, -- bag you desire
+	{id = 39546, chance = 10}, -- primal bag
 	{id = 3098, chance = 1000} -- ring of healing
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -45},
-	{name ="combat", interval = 1000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = -5, maxDamage = -40, range = 7, shootEffect = CONST_ANI_THROWINGKNIFE, target = false}
+	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -2450},
+	{name ="combat", interval = 1000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = -5, maxDamage = -1840, range = 7, shootEffect = CONST_ANI_THROWINGKNIFE, target = false}
 }
 
 monster.defenses = {

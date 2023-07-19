@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Breach Brood")
 local monster = {}
 
 monster.description = "a breach brood"
-monster.experience = 1760
+monster.experience = 37000
 monster.outfit = {
 	lookType = 878,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Otherworld."
 	}
 
-monster.health = 3500
-monster.maxHealth = 3500
+monster.health = 35000
+monster.maxHealth = 35000
 monster.race = "venom"
 monster.corpse = 23392
 monster.speed = 135
@@ -77,8 +77,9 @@ monster.voices = {
 }
 
 monster.loot = {
-	{id = 3031, chance = 100000, maxCount = 100}, -- gold coin
-	{id = 3035, chance = 100000, maxCount = 5}, -- platinum coin
+	{id = 3043, chance = 100000, maxCount = 2}, -- crystal coin
+	{id = 34109, chance = 10}, -- bag you desire
+	{id = 39546, chance = 10}, -- primal bag
 	{id = 23535, chance = 15000}, -- energy bar
 	{id = 23545, chance = 15000}, -- energy drink
 	{id = 23518, chance = 15000}, -- spark sphere
@@ -98,9 +99,9 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -350},
-	{name ="combat", interval = 2000, chance = 25, type = COMBAT_ENERGYDAMAGE, minDamage = -200, maxDamage = -400, range = 6, shootEffect = CONST_ANI_FLASHARROW, effect = CONST_ME_STUN, target = true},
-	{name ="combat", interval = 2000, chance = 20, type = COMBAT_LIFEDRAIN, minDamage = -150, maxDamage = -350, radius = 5, effect = CONST_ME_MAGIC_RED, target = false},
+	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1350},
+	{name ="combat", interval = 2000, chance = 25, type = COMBAT_ENERGYDAMAGE, minDamage = -200, maxDamage = -1400, range = 6, shootEffect = CONST_ANI_FLASHARROW, effect = CONST_ME_STUN, target = true},
+	{name ="combat", interval = 2000, chance = 20, type = COMBAT_LIFEDRAIN, minDamage = -150, maxDamage = -1350, radius = 5, effect = CONST_ME_MAGIC_RED, target = false},
 	{name ="breach brood reducer", interval = 2000, chance = 20, target = false}
 }
 

@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Orclops Ravager")
 local monster = {}
 
 monster.description = "an orclops ravager"
-monster.experience = 1100
+monster.experience = 41100
 monster.outfit = {
 	lookType = 935,
 	lookHead = 94,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Desecrated Glade."
 	}
 
-monster.health = 1200
-monster.maxHealth = 1200
+monster.health = 41200
+monster.maxHealth = 41200
 monster.race = "blood"
 monster.corpse = 25074
 monster.speed = 130
@@ -96,13 +96,16 @@ monster.loot = {
 	{id = 16123, chance = 15290, maxCount = 3}, -- brown crystal splinter
 	{id = 17828, chance = 910}, -- pair of iron fists
 	{id = 2966, chance = 910}, -- war drum
+	{id = 3043, chance = 100000, maxCount = 2}, -- crystal coin
+	{id = 34109, chance = 10}, -- bag you desire
+	{id = 39546, chance = 10}, -- primal bag
 	{id = 7439, chance = 910}, -- berserk potion
 	{id = 7419, chance = 300} -- dreaded cleaver
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -240},
-	{name ="combat", interval = 2000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -180, maxDamage = -220, range = 7, shootEffect = CONST_ANI_LARGEROCK, target = true}
+	{name ="melee", interval = 2000, chance = 100, minDamage = 800, maxDamage = -1640},
+	{name ="combat", interval = 2000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -1000, maxDamage = -2200, range = 7, shootEffect = CONST_ANI_LARGEROCK, target = true}
 }
 
 monster.defenses = {
@@ -126,7 +129,7 @@ monster.elements = {
 }
 
 monster.immunities = {
-	{type = "paralyze", condition = false},
+	{type = "paralyze", condition = true},
 	{type = "outfit", condition = false},
 	{type = "invisible", condition = true},
 	{type = "bleed", condition = false}

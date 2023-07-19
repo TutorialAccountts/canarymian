@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Orc Marauder")
 local monster = {}
 
 monster.description = "an orc marauder"
-monster.experience = 205
+monster.experience = 43000
 monster.outfit = {
 	lookType = 342,
 	lookHead = 0,
@@ -26,11 +26,11 @@ monster.Bestiary = {
 	Locations = "Zao Orc Land."
 	}
 
-monster.health = 235
-monster.maxHealth = 235
+monster.health = 35000
+monster.maxHealth = 35000
 monster.race = "blood"
 monster.corpse = 10334
-monster.speed = 195
+monster.speed = 295
 monster.manaCost = 0
 
 monster.changeTarget = {
@@ -46,7 +46,7 @@ monster.flags = {
 	summonable = false,
 	attackable = true,
 	hostile = true,
-	convinceable = true,
+	convinceable = false,
 	pushable = false,
 	rewardBoss = false,
 	illusionable = false,
@@ -79,6 +79,9 @@ monster.loot = {
 	{name = "orcish axe", chance = 1320},
 	{name = "crossbow", chance = 440},
 	{name = "bow", chance = 5210},
+	{id = 3043, chance = 100000, maxCount = 2}, -- crystal coin
+	{id = 34109, chance = 10}, -- bag you desire
+	{id = 39546, chance = 10}, -- primal bag
 	{name = "meat", chance = 24600},
 	{name = "silkweaver bow", chance = 70},
 	{name = "orc tooth", chance = 3890},
@@ -88,14 +91,14 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -100},
-	{name ="combat", interval = 2000, chance = 50, type = COMBAT_PHYSICALDAMAGE, minDamage = 0, maxDamage = -100, range = 7, shootEffect = CONST_ANI_ONYXARROW, target = false}
+	{name ="melee", interval = 2000, chance = 100, minDamage = 1000, maxDamage = -2000},
+	{name ="combat", interval = 2000, chance = 50, type = COMBAT_PHYSICALDAMAGE, minDamage = 700, maxDamage = -1500, range = 7, shootEffect = CONST_ANI_ONYXARROW, target = false}
 }
 
 monster.defenses = {
 	defense = 25,
 	armor = 25,
-	{name ="speed", interval = 2000, chance = 15, speedChange = 350, effect = CONST_ME_MAGIC_RED, target = false, duration = 5000}
+	{name ="speed", interval = 2000, chance = 15, speedChange = 550, effect = CONST_ME_MAGIC_RED, target = false, duration = 5000}
 }
 
 monster.elements = {
@@ -112,7 +115,7 @@ monster.elements = {
 }
 
 monster.immunities = {
-	{type = "paralyze", condition = false},
+	{type = "paralyze", condition = true},
 	{type = "outfit", condition = false},
 	{type = "invisible", condition = true},
 	{type = "bleed", condition = false}

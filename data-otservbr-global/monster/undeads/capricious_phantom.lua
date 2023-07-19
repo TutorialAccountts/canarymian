@@ -94,7 +94,7 @@ monster.loot = {
 	{id = 34145, chance = 11560}, -- capricious robe
 	{id = 23529, chance = 28920}, -- ring of blue plasma
 	{id = 23542, chance = 24920}, -- collar of blue plasma
-	{id = 34109, chance = 50} -- bag you desire
+	{id = 34109, chance = 10} -- bag you desire
 }
 
 monster.attacks = {

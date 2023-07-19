@@ -92,7 +92,7 @@ monster.loot = {
 	{id = 23542, chance = 28920}, -- collar of blue plasma
 	{id = 34141, chance = 12920}, -- mould heart
 	{name = "crystal crossbow", chance = 1920},
-	{id = 34109, chance = 50} -- bag you desire
+	{id = 34109, chance = 10} -- bag you desire
 }
 
 monster.attacks = {

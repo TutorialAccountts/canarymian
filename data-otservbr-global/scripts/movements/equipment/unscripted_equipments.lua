@@ -11,6 +11,438 @@ local items = {
 		}
 	},
 	{
+    -- Sanguine Blade (equip)
+    itemid = 43864,
+    type = "equip",
+    slot = "hand",
+    level = 600,
+    vocation = {
+        {"Knight", true},
+        {"Elite Knight", true}
+    }
+  },
+  {
+    -- Sanguine Blade (deequip)
+    itemid = 43864,
+    type = "deequip",
+    slot = "hand",
+    level = 600
+  },
+  {
+    -- Grand Sanguine Blade (equip)
+    itemid = 43865,
+    type = "equip",
+    slot = "hand",
+    level = 600,
+    vocation = {
+        {"Knight", true},
+        {"Elite Knight", true}
+    }
+  },
+  {
+    -- Grand Sanguine Blade (deequip)
+    itemid = 43865,
+    type = "deequip",
+    slot = "hand",
+    level = 600
+  },
+  {
+    -- Sanguine Razor (equip)
+    itemid = 43870,
+    type = "equip",
+    slot = "hand",
+    level = 600,
+    vocation = {
+        {"Knight", true},
+        {"Elite Knight", true}
+    }
+  },
+  {
+    -- Sanguine Razor (deequip)
+    itemid = 43870,
+    type = "deequip",
+    slot = "hand",
+    level = 600
+  },
+  {
+    -- Grand Sanguine Razor (equip)
+    itemid = 43871,
+    type = "equip",
+    slot = "hand",
+    level = 600,
+    vocation = {
+        {"Knight", true},
+        {"Elite Knight", true}
+    }
+  },
+  {
+    -- Grand Sanguine Razor (deequip)
+    itemid = 43871,
+    type = "deequip",
+    slot = "hand",
+    level = 600
+  },
+  {
+    -- Sanguine Bludgeon (equip)
+    itemid = 43872,
+    type = "equip",
+    slot = "hand",
+    level = 600,
+    vocation = {
+        {"Knight", true},
+        {"Elite Knight", true}
+    }
+  },
+  {
+    -- Sanguine Bludgeon (deequip)
+    itemid = 43872,
+    type = "deequip",
+    slot = "hand",
+    level = 600
+  },
+  {
+    -- Grand Sanguine Bludgeon (equip)
+    itemid = 43873,
+    type = "equip",
+    slot = "hand",
+    level = 600,
+    vocation = {
+        {"Knight", true},
+        {"Elite Knight", true}
+    }
+  },
+  {
+    -- Grand Sanguine Bludgeon (deequip)
+    itemid = 43873,
+    type = "deequip",
+    slot = "hand",
+    level = 600
+  },
+  {
+    -- Sanguine Cudgel (equip)
+    itemid = 43866,
+    type = "equip",
+    slot = "hand",
+    level = 600,
+    vocation = {
+        {"Knight", true},
+        {"Elite Knight", true}
+    }
+  },
+  {
+    -- Sanguine Cudgel (deequip)
+    itemid = 43866,
+    type = "deequip",
+    slot = "hand",
+    level = 600
+  },
+  {
+    -- Grand Sanguine Cudgel (equip)
+    itemid = 43867,
+    type = "equip",
+    slot = "hand",
+    level = 600,
+    vocation = {
+        {"Knight", true},
+        {"Elite Knight", true}
+    }
+  },
+  {
+    -- Grand Sanguine Cudgel (deequip)
+    itemid = 43867,
+    type = "deequip",
+    slot = "hand",
+    level = 600
+  },
+  {
+    -- Sanguine Hatchet (equip)
+    itemid = 43868,
+    type = "equip",
+    slot = "hand",
+    level = 600,
+    vocation = {
+        {"Knight", true},
+        {"Elite Knight", true}
+    }
+  },
+  {
+    -- Sanguine Hatchet (deequip)
+    itemid = 43868,
+    type = "deequip",
+    slot = "hand",
+    level = 600
+  },
+  {
+    -- Grand Sanguine Hatchet (equip)
+    itemid = 43869,
+    type = "equip",
+    slot = "hand",
+    level = 600,
+    vocation = {
+        {"Knight", true},
+        {"Elite Knight", true}
+    }
+  },
+  {
+    -- Grand Sanguine Hatchet (deequip)
+    itemid = 43869,
+    type = "deequip",
+    slot = "hand",
+    level = 600
+  },
+  {
+    -- Sanguine Battleaxe (equip)
+    itemid = 43874,
+    type = "equip",
+    slot = "hand",
+    level = 600,
+    vocation = {
+        {"Knight", true},
+        {"Elite Knight", true}
+    }
+  },
+  {
+    -- Sanguine Battleaxe (deequip)
+    itemid = 43874,
+    type = "deequip",
+    slot = "hand",
+    level = 600
+  },
+  {
+    -- Grand Sanguine Battleaxe (equip)
+    itemid = 43875,
+    type = "equip",
+    slot = "hand",
+    level = 600,
+    vocation = {
+        {"Knight", true},
+        {"Elite Knight", true}
+    }
+  },
+  {
+    -- Grand Sanguine Battleaxe (deequip)
+    itemid = 43875,
+    type = "deequip",
+    slot = "hand",
+    level = 600
+  },
+  {
+    -- Sanguine Legs (equip)
+    itemid = 43876,
+    type = "equip",
+    slot = "legs",
+    level = 600,
+    vocation = {
+        {"Knight", true},
+        {"Elite Knight", true}
+    }
+  },
+  {
+    -- Sanguine Legs (deequip)
+    itemid = 43876,
+    type = "deequip",
+    slot = "legs",
+    level = 600
+  },
+  {
+    -- Sanguine Bow (equip)
+    itemid = 43877,
+    type = "equip",
+    slot = "hand",
+    level = 600,
+    vocation = {
+        {"Paladin", true},
+        {"Royal Paladin", true}
+    }
+  },
+  {
+    -- Sanguine Bow (deequip)
+    itemid = 43877,
+    type = "deequip",
+    slot = "hand",
+    level = 600
+  },
+  {
+    -- Grand Sanguine Bow (equip)
+    itemid = 43878,
+    type = "equip",
+    slot = "hand",
+    level = 600,
+    vocation = {
+        {"Paladin", true},
+        {"Royal Paladin", true}
+    }
+  },
+  {
+    -- Grand Sanguine Bow (deequip)
+    itemid = 43878,
+    type = "deequip",
+    slot = "hand",
+    level = 600
+  },
+  {
+    -- Sanguine Crossbow (equip)
+    itemid = 43879,
+    type = "equip",
+    slot = "hand",
+    level = 600,
+    vocation = {
+        {"Paladin", true},
+        {"Royal Paladin", true}
+    }
+  },
+  {
+    -- Sanguine Crossbow (deequip)
+    itemid = 43879,
+    type = "deequip",
+    slot = "hand",
+    level = 600
+  },
+  {
+    -- Grand Sanguine Crossbow (equip)
+    itemid = 43880,
+    type = "equip",
+    slot = "hand",
+    level = 600,
+    vocation = {
+        {"Paladin", true},
+        {"Royal Paladin", true}
+    }
+  },
+  {
+    -- Grand Sanguine Crossbow (deequip)
+    itemid = 43880,
+    type = "deequip",
+    slot = "hand",
+    level = 600
+  },
+  {
+    -- Sanguine Greaves (equip)
+    itemid = 43881,
+    type = "equip",
+    slot = "legs",
+    level = 600,
+    vocation = {
+        {"Paladin", true},
+        {"Royal Paladin", true}
+    }
+  },
+  {
+    -- Sanguine Greaves (deequip)
+    itemid = 43881,
+    type = "deequip",
+    slot = "legs",
+    level = 600
+  },
+  {
+    -- Sanguine Coil (equip)
+    itemid = 43882,
+    type = "equip",
+    slot = "hand",
+    level = 600,
+    vocation = {
+        {"Sorcerer", true},
+        {"Master Sorcerer", true}
+    }
+  },
+  {
+    -- Sanguine Coil (deequip)
+    itemid = 43882,
+    type = "deequip",
+    slot = "hand",
+    level = 600
+  },
+  {
+    -- Grand Sanguine Coil (equip)
+    itemid = 43883,
+    type = "equip",
+    slot = "hand",
+    level = 600,
+    vocation = {
+        {"Sorcerer", true},
+        {"Master Sorcerer", true}
+    }
+  },
+  {
+    -- Grand Sanguine Coil (deequip)
+    itemid = 43883,
+    type = "deequip",
+    slot = "hand",
+    level = 600
+  },
+  {
+    -- Sanguine Boots (equip)
+    itemid = 43884,
+    type = "equip",
+    slot = "feet",
+    level = 600,
+    vocation = {
+        {"Sorcerer", true},
+        {"Master Sorcerer", true}
+    }
+  },
+  {
+    -- Sanguine Boots (deequip)
+    itemid = 43884,
+    type = "deequip",
+    slot = "feet",
+    level = 600
+  },
+  {
+    -- Sanguine Rod (equip)
+    itemid = 43885,
+    type = "equip",
+    slot = "hand",
+    level = 600,
+    vocation = {
+        {"Druid", true},
+        {"Elder Druid", true}
+    }
+  },
+  {
+    -- Sanguine Rod (deequip)
+    itemid = 43885,
+    type = "deequip",
+    slot = "hand",
+    level = 600
+  },
+  {
+    -- Grand Sanguine Rod (equip)
+    itemid = 43886,
+    type = "equip",
+    slot = "hand",
+    level = 600,
+    vocation = {
+        {"Druid", true},
+        {"Elder Druid", true}
+    }
+  },
+  {
+    -- Grand Sanguine Rod (deequip)
+    itemid = 43886,
+    type = "deequip",
+    slot = "hand",
+    level = 600
+  },
+  {
+    -- Sanguine Galoshes (equip)
+    itemid = 43887,
+    type = "equip",
+    slot = "feet",
+    level = 600,
+    vocation = {
+        {"Druid", true},
+        {"Elder Druid", true}
+    }
+  },
+  {
+    -- Sanguine Galoshes (deequip)
+    itemid = 43887,
+    type = "deequip",
+    slot = "feet",
+    level = 600
+  },
+	{
 		-- mutant bone kilt
 		itemid = 40595,
 		type = "deequip",

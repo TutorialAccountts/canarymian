@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Shaper Matriarch")
 local monster = {}
 
 monster.description = "a shaper matriarch"
-monster.experience = 1650
+monster.experience = 41650
 monster.outfit = {
 	lookType = 933,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Old Masonry, small dungeon under the Formorgar Mines."
 	}
 
-monster.health = 2000
-monster.maxHealth = 2000
+monster.health = 42000
+monster.maxHealth = 42000
 monster.race = "blood"
 monster.corpse = 25071
 monster.speed = 130
@@ -55,9 +55,9 @@ monster.flags = {
 	illusionable = false,
 	canPushItems = true,
 	canPushCreatures = false,
-	staticAttackChance = 90,
-	targetDistance = 4,
-	runHealth = 15,
+	staticAttackChance = 1,
+	targetDistance = 0,
+	runHealth = 0,
 	healthHidden = false,
 	isBlockable = false,
 	canWalkOnEnergy = false,
@@ -95,15 +95,18 @@ monster.loot = {
 	{id = 237, chance = 15000}, -- strong mana potion
 	{id = 24387, chance = 15000}, -- tarnished rhino figurine
 	{id = 3072, chance = 2000}, -- wand of decay
+	{id = 3043, chance = 100000, maxCount = 2}, -- crystal coin
+	{id = 34109, chance = 10}, -- bag you desire
+	{id = 39546, chance = 10}, -- primal bag
 	{id = 8094, chance = 800}, -- wand of voodoo
 	{id = 2901, chance = 2000} -- waterskin
 }
 
 monster.attacks = {
 	{name ="melee", interval = 2000, chance = 100, skill = 15, attack = 25},
-	{name ="combat", interval = 2000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -35, maxDamage = -160, range = 7, shootEffect = CONST_ANI_EARTH, effect = CONST_ME_POISONAREA, target = false},
-	{name ="combat", interval = 2000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -35, maxDamage = -160, radius = 3, effect = CONST_ME_ENERGYHIT, target = false},
-	{name ="combat", interval = 2000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = 0, maxDamage = -400, length = 6, spread = 3, effect = CONST_ME_MORTAREA, target = false}
+	{name ="combat", interval = 2000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -35, maxDamage = -1600, range = 7, shootEffect = CONST_ANI_EARTH, effect = CONST_ME_POISONAREA, target = false},
+	{name ="combat", interval = 2000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -35, maxDamage = -1600, radius = 3, effect = CONST_ME_ENERGYHIT, target = false},
+	{name ="combat", interval = 2000, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = 0, maxDamage = -1400, length = 6, spread = 3, effect = CONST_ME_MORTAREA, target = false}
 }
 
 monster.defenses = {
@@ -126,7 +129,7 @@ monster.elements = {
 }
 
 monster.immunities = {
-	{type = "paralyze", condition = false},
+	{type = "paralyze", condition = true},
 	{type = "outfit", condition = false},
 	{type = "invisible", condition = true},
 	{type = "bleed", condition = false}

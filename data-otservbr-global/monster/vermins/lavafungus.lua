@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Lavafungus")
 local monster = {}
 
 monster.description = "a lavafungus"
-monster.experience = 6200
+monster.experience = 40200
 monster.outfit = {
 	lookType = 1405,
 	lookHead = 0,
@@ -26,11 +26,11 @@ monster.Bestiary = {
 	Locations = "Grotto of the Lost"
 }
 
-monster.health = 7200
-monster.maxHealth = 7200
+monster.health = 37200
+monster.maxHealth = 37200
 monster.race = "blood"
 monster.corpse = 36764
-monster.speed = 115
+monster.speed = 255
 monster.manaCost = 0
 
 monster.changeTarget = {
@@ -80,6 +80,9 @@ monster.loot = {
 	{name = "terra rod", chance = 41860, maxCount = 1},
 	{name = "lavafungus ring", chance = 9300, maxCount = 4},
 	{id = 3039, chance = 9300, maxCount = 1}, -- red gem
+	{id = 3043, chance = 100000, maxCount = 2}, -- crystal coin
+	{id = 34109, chance = 10}, -- bag you desire
+	{id = 39546, chance = 10}, -- primal bag
 	{name = "hailstorm rod", chance = 4650},
 	{name = "blue crystal shard", chance = 4000},
 	{name = "violet gem", chance = 4650},
@@ -103,12 +106,12 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -810},
-	{name ="combat", interval = 2000, chance = 50, type = COMBAT_DEATHDAMAGE, minDamage = -560, maxDamage = -650, length = 6, spread = 0, effect = CONST_ME_MORTAREA, target = false},
-	{name ="combat", interval = 2750, chance = 40, type = COMBAT_FIREDAMAGE, minDamage = -490, maxDamage = -720, range = 5, shootEffect = CONST_ANI_FIRE, target = true},
-	{name ="combat", interval = 2750, chance = 30, type = COMBAT_DEATHDAMAGE, minDamage = -720, maxDamage = -810, range = 5, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA, target = true},
-	{name ="lavafungus ring", interval = 2000, chance = 20, minDamage = -450, maxDamage = -610},
-	{name ="lavafungus x wave", interval = 2000, chance = 10, minDamage = -640, maxDamage = -730},
+	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1810},
+	{name ="combat", interval = 2000, chance = 50, type = COMBAT_DEATHDAMAGE, minDamage = -560, maxDamage = -1650, length = 6, spread = 0, effect = CONST_ME_MORTAREA, target = false},
+	{name ="combat", interval = 2750, chance = 40, type = COMBAT_FIREDAMAGE, minDamage = -490, maxDamage = -1720, range = 5, shootEffect = CONST_ANI_FIRE, target = true},
+	{name ="combat", interval = 2750, chance = 30, type = COMBAT_DEATHDAMAGE, minDamage = -720, maxDamage = -1810, range = 5, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA, target = true},
+	{name ="lavafungus ring", interval = 2000, chance = 20, minDamage = -450, maxDamage = -1610},
+	{name ="lavafungus x wave", interval = 2000, chance = 10, minDamage = -640, maxDamage = -1730},
 }
 
 monster.defenses = {
@@ -131,7 +134,7 @@ monster.elements = {
 }
 
 monster.immunities = {
-	{type = "paralyze", condition = false},
+	{type = "paralyze", condition = true},
 	{type = "outfit", condition = false},
 	{type = "invisible", condition = true},
 	{type = "bleed", condition = false}

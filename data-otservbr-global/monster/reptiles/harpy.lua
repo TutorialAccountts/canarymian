@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Harpy")
 local monster = {}
 
 monster.description = "a harpy"
-monster.experience = 5720
+monster.experience = 64000
 monster.outfit = {
 	lookType = 1604,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Ingol"
 	}
 
-monster.health = 7700
-monster.maxHealth = 7700
+monster.health = 77700
+monster.maxHealth = 77700
 monster.race = "blood"
 monster.corpse = 42222
 monster.speed = 175
@@ -79,6 +79,9 @@ monster.loot = {
 	{name = "platinum coin", chance = 73130, maxCount = 30},
 	{name = "harpy feathers", chance = 6720},
 	{name = "violet crystal shard", chance = 4690},
+	{id = 3043, chance = 100000, maxCount = 3}, -- crystal coin
+	{id = 34109, chance = 10}, -- bag you desire
+	{id = 39546, chance = 10}, -- primal bag
 	{name = "blue crystal shard", chance = 4530},
 	{name = "great spirit potion", chance = 2970, maxCount = 3},
 	{name = "violet gem", chance = 2500},
@@ -91,13 +94,13 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -345},
-	{name ="combat", interval = 2000, chance = 30, type = COMBAT_PHYSICALDAMAGE, minDamage = -296, maxDamage = -350, range = 3, effect = CONST_ME_BIG_SCRATCH, target = true},
-	{name ="energy ring", interval = 2000, chance = 20, minDamage = -280, maxDamage = -350},
-	{name ="energy chain", interval = 2000, chance = 20, minDamage = -155, maxDamage = -249, range = 3, target = true},
-	{name ="combat", interval = 2000, chance = 25, type = COMBAT_ENERGYDAMAGE, minDamage = -310, maxDamage = -405, length = 5, spread = 3, effect = CONST_ME_SOUND_BLUE, target = false},
-	{name ="combat", interval = 2000, chance = 30, type = COMBAT_ENERGYDAMAGE, minDamage = -320, maxDamage = -420, range = 7, radius = 4, effect = CONST_ME_ENERGYHIT, target = true},
-	{name ="combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -425, maxDamage = -545, effect = CONST_ME_POISON, target = true},
+	-- Chain Attack(1155-2249),
+
+	{name ="melee", interval = 2000, chance = 100, minDamage = 1700, maxDamage = -3345},
+	{name ="combat", interval = 2000, chance = 30, type = COMBAT_PHYSICALDAMAGE, minDamage = -1796, maxDamage = -3350, range = 3, effect = CONST_ME_BIG_SCRATCH, target = true},
+	{name ="combat", interval = 2000, chance = 25, type = COMBAT_ENERGYDAMAGE, minDamage = -1710, maxDamage = -3405, length = 5, spread = 3, effect = CONST_ME_SOUND_BLUE, target = false},
+	{name ="combat", interval = 2000, chance = 30, type = COMBAT_ENERGYDAMAGE, minDamage = -1720, maxDamage = -3420, range = 7, radius = 4, effect = CONST_ME_ENERGYHIT, target = true},
+	{name ="combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -1725, maxDamage = -3545, effect = CONST_ME_POISON, target = true},
 }
 
 monster.defenses = {
